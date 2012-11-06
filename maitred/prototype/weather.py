@@ -7,10 +7,10 @@ while True:
         
         if imperial:
             y_weather = pywapi.get_weather_from_yahoo( line , units = 'imperial')
-            print ('It is '+ string.lower(y_weather['condition']['text']) + " and " + y_weather['condition']['temp'] + 'F now.')
+            print ('It is '+ str.lower(y_weather['condition']['text']) + " and " + y_weather['condition']['temp'] + 'F now.')
         else:
             y_weather = pywapi.get_weather_from_yahoo( line , units = 'metric')
-            print ('It is '+ string.lower(y_weather['condition']['text']) + " and " + y_weather['condition']['temp'] + 'C now.')
+            print ('It is '+ str.lower(y_weather['condition']['text']) + " and " + y_weather['condition']['temp'] + 'C now.')
    
     except:
             print('There was a problem with your request. Please try again. Make sure this is a US ZIP code.')
