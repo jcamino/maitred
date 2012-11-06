@@ -7,3 +7,5 @@ __pycache__
 
 # Ignore the virtualenv files.
 venv
+
+.DS_Store
